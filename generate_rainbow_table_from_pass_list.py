@@ -60,19 +60,19 @@ else:
 
             elif hash_alg == 2:
                 result_sha1 = hashlib.sha1(line.encode())
-                list_of_rainbow.append(f"{line}, {result_md5.hexdigest()}")
+                list_of_rainbow.append(f"{line}, {result_sha1.hexdigest()}")
 
             elif hash_alg == 3:
                 result_sha224 = hashlib.sha224(line.encode())
-                list_of_rainbow.append(f"{line}, {result_md5.hexdigest()}")
+                list_of_rainbow.append(f"{line}, {result_sha224.hexdigest()}")
 
             elif hash_alg == 4:
                 result_sha256 = hashlib.sha256(line.encode())
-                list_of_rainbow.append(f"{line}, {result_md5.hexdigest()}")
+                list_of_rainbow.append(f"{line}, {result_sha256.hexdigest()}")
 
             elif hash_alg == 5:
                 result_sha384 = hashlib.sha384(line.encode())
-                list_of_rainbow.append(f"{line}, {result_md5.hexdigest()}")
+                list_of_rainbow.append(f"{line}, {result_sha384.hexdigest()}")
 
     except:
         print('Um erro ocorreu, não foi possivel processar o arquivo passado.')
