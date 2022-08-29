@@ -95,4 +95,4 @@ else:
             
             fp.write(f"{item}\n")
         
-        print('Done')
+        print(f'O arquivo {ts}-generated-rainbow-table-{n[hash_alg]}.csv foi criado com sucesso.')
