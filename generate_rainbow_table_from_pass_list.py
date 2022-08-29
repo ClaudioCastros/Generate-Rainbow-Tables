@@ -1,7 +1,7 @@
 import hashlib, sys
 from datetime import datetime
 '''  
-str2hash = "GeeksforGeeks"
+str2hash = "password"
   
 result_md5 = hashlib.md5(str2hash.encode())
 result_sha1 = hashlib.sha1(str2hash.encode())
